@@ -5,6 +5,7 @@ import { SearchstudentComponent } from 'src/app/school/searchstudent/searchstude
 import { LoginComponent } from '../../pages/login/login.component';
 import { RegisterComponent } from '../../pages/register/register.component';
 import { PayfeesComponent } from 'src/app/pages/payfees/payfees.component';
+import { FeeSchedulePaymentComponent } from 'src/app/pages/fee-schedule-payment/fee-schedule-payment.component';
 
 export const AuthLayoutRoutes: Routes = [
     { path: 'login',          component: LoginComponent },
@@ -12,7 +13,8 @@ export const AuthLayoutRoutes: Routes = [
     { path:'searchstudent',   component:SearchstudentComponent},
     { path:'searchdate',      component:DateOfBirthComponent},
     { path:'studentinfo',     component:StudentInformationComponent},
-    { path:'payfees',         component:PayfeesComponent }
+    { path:'payfees',         component:PayfeesComponent },
+    {path:'schedulepayment',component:FeeSchedulePaymentComponent}
     
 
 ];

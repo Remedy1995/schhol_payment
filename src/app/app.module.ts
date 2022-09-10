@@ -17,6 +17,7 @@ import { DateOfBirthComponent } from './pages/date-of-birth/date-of-birth.compon
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { StudentInformationComponent } from './pages/student-information/student-information.component';
+import { FeeSchedulePaymentComponent } from './pages/fee-schedule-payment/fee-schedule-payment.component';
 
 
 
@@ -45,6 +46,7 @@ import { StudentInformationComponent } from './pages/student-information/student
     SearchstudentComponent,
     DateOfBirthComponent,
     StudentInformationComponent,
+    FeeSchedulePaymentComponent,
    
   ],
   providers: [

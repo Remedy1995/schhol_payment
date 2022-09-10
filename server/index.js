@@ -54,6 +54,6 @@ mongoose.connect(mongodb,{useNewUrlParser:true,useUnifiedTopology:true}).then(()
 
 
 app.listen(4000,()=>{
-    console.log("server is running on port  ready"+port);
+    console.log("server is running on port "+port);
 })
 

@@ -14,7 +14,7 @@ exports.schoolFeesPayment=(request,res,next)=>{
       path: '/transaction/initialize',
       method: 'POST',
       headers: {
-        Authorization: 'Bearer sk_live_eebc6bd6fca7c71758f8a69d4aa93fbf1a9f4991',
+        Authorization: `Bearer ${process.env.PAYSTACK_API}`,
         'Content-Type': 'application/json'
       }
     }

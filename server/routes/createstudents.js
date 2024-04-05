@@ -8,6 +8,6 @@ router.use(bodyparser.urlencoded({extended:false}));
 router.use(bodyparser.json());
 router.use(cors())
 
-router.post('/createstudents',verify.verifyToken,createstudentsController.createstudents);
+router.post('/createstudents',createstudentsController.createstudents);
 
 module.exports=router;

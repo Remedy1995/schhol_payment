@@ -25,7 +25,7 @@ const getallemployeeobjectives=require('./routes/getallemployeeobjectives');
 const getallpersonaldevelopment=require('./routes/getallpersonaldevelopment');
 const md5=require('md5')
 app.use(cors());
-app.use('/schoolfeespayment',schoolfeespayment);
+app.use('/payment',schoolfeespayment);
 app.use('/createstudents',createstudents)
 app.use('/createuser',createuser);
 app.use('/personaldevelopment',personaldevelopment)
@@ -44,7 +44,7 @@ app.use('/getallemployeeobjectives',getallemployeeobjectives)
 app.use('/getallpersonaldevelopment',getallpersonaldevelopment)
 
 
-const mongodb='mongodb://localhost:27017/hris';
+const mongodb=process.env.DATABASE_CONNECTION;
 mongoose.connect(mongodb,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>
 {
   console.log("successfully connected to the database");
